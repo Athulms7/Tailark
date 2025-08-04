@@ -5,12 +5,14 @@ import PremiumPricingSection from "./_components/pricing2";
 import AnimatedTestimonials from "./_components/customer";
 import TestimonialSection from "./_components/customer";
 import Footer from "./_components/footer";
+import FeatureSection from "./_components/featuresection";
 
 
 export default function Home() {
   return (<>
     <Hero/>
     <TrustedCompanies/>
+    <FeatureSection/>
     <PremiumPricingSection/>
     <TestimonialSection/>
     <Footer/>
