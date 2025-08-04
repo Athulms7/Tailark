@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
@@ -176,7 +175,7 @@ export default function Hero() {
         )}
 
         {/* Subtle Grid Overlay */}
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03] dark:opacity-[0.02]" />
+        <div className="absolute inset-0 bg-gray-50 opacity-[0.03] dark:opacity-[0.02]" />
 
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="animate-in text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
