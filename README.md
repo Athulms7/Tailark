@@ -1,3 +1,145 @@
+# 🌐 Webzee – SaaS Landing Page
+
+**Webzee** is a clean, responsive, animated SaaS landing page built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion/GSAP**. Designed to showcase your product or startup beautifully, it includes animated sections, responsive layout, and a premium modern UI.
+
+---
+
+## 🚀 Features
+
+- ✨ Modern Next.js 14 App Directory
+- 🎨 Styled with Tailwind CSS and custom design tokens
+- 🧠 Scroll-based animations with Framer Motion or GSAP
+- 🧩 Component-based architecture
+- 💬 Masonry-style testimonial section
+- ⚙️ `next/image` optimization with external avatars
+- 📱 Mobile responsive design
+- 🌗 Light mode support
+- 🔥 Ready for deployment (Vercel, Render, etc.)
+
+---
+
+## 📁 Project Structure
+
+webzee/ ├── app/ │   ├── _components/        # UI components (Testimonials, Features, etc.) │   ├── layout.tsx          # App layout with global styles │   └── page.tsx            # Main homepage ├── public/                 # Static files (images, preview, icons) ├── styles/                 # Tailwind & global CSS (if any) ├── next.config.js          # Next.js config ├── tailwind.config.ts      # Tailwind CSS configuration ├── tsconfig.json           # TypeScript settings ├── postcss.config.js       # PostCSS plugins └── README.md               # You are here!
+
+---
+
+## ⚙️ Tech Stack
+
+- [Next.js 14](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/) / [GSAP](https://greensock.com/gsap/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [Dicebear Avatars](https://www.dicebear.com/) (for testimonial avatars)
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/webzee.git
+cd webzee
+
+2. Install Dependencies
+
+npm install
+# or
+yarn
+
+3. Run the Dev Server
+
+npm run dev
+# or
+yarn dev
+
+Visit http://localhost:3000 in your browser.
+
+
+---
+
+🧩 Configuration
+
+Allow External Avatars in next.config.js
+
+> Required for next/image to load Dicebear avatars.
+
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ["api.dicebear.com"],
+  },
+};
+
+module.exports = nextConfig;
+
+Then restart your dev server.
+
+
+---
+
+🚀 Build & Deploy
+
+Local Production Build
+
+npm run build
+npm run start
+
+Deploy Platforms
+
+Vercel
+
+Render
+
+Netlify (with adapter)
+
+Any other Next.js-compatible hosting
+
+
+
+---
+
+📸 Preview
+
+> Add this file: /public/preview.png
+
+
+
+📸 Screenshot Preview
+
+![Webzee Screenshot](./public/preview.png)
+
+
+---
+
+✨ Contributing
+
+Contributions, suggestions, and pull requests are welcome!
+Feel free to fork the project and open issues or PRs.
+
+
+---
+
+📃 License
+
+This project is licensed under the MIT License.
+
+
+---
+
+👨‍💻 Author
+
+Athul M S
+GitHub – @Athulms7
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -14,23 +156,3 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
