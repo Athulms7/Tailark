@@ -185,10 +185,10 @@ const PremiumPricingSection = () => {
       <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8 relative z-10">
         {/* Premium Hero Section */}
         <header className="hero-content text-center py-16 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-300 to-indigo-200 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text sm-text-xl text-transparent bg-gradient-to-r from-purple-300 to-indigo-200 leading-tight">
             Elevate Your Digital Experience
           </h1>
-          <p className="text-xl md:text-2xl text-gray-400 font-light mb-8 leading-relaxed">
+          <p className="text-xl sm:text-lg text-gray-400 font-light mb-8 leading-relaxed">
             Discover our meticulously crafted UI solutions designed to transform your projects into 
             exceptional digital experiences.
           </p>
