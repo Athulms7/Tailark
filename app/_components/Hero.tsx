@@ -5,13 +5,6 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Appbar from "./appbar";
 
-const menuItems = [
-  { name: "Features", href: "#Features" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "About", href: "#about" },
-  {name:"Contact",href:"#contact"}
-];
-
 // Fixed particle positions (avoid Math.random() during render)
 const particles = Array.from({ length: 15 }).map((_, i) => ({
   id: i,

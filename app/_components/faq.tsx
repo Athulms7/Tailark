@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { Button } from '@/components/ui/button';
 
 export function PremiumFAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
