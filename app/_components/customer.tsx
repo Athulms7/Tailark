@@ -48,7 +48,7 @@ export default function TestimonialSection() {
         </p>
       </div>
 
-      <div className="mt-12 max-w-5xl mx-auto">
+      <div className="mt-12 max-w-5xl mx-auto ">
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -112,7 +112,7 @@ export default function TestimonialSection() {
           ].map((t, i) => (
             <SwiperSlide
               key={i}
-              className={`testimonial-card rounded-2xl p-6 shadow-md ${
+              className={`testimonial-card rounded-2xl p-6 shadow-md mb-9  ${
                 t.dark ? "bg-black text-white" : "bg-white text-gray-900"
               }`}
             >

@@ -188,7 +188,7 @@ const PremiumPricingSection = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text sm-text-xl text-transparent bg-gradient-to-r from-purple-300 to-indigo-200 leading-tight">
             Elevate Your Digital Experience
           </h1>
-          <p className="text-xl sm:text-lg text-gray-400 font-light mb-8 leading-relaxed">
+          <p className="text-xl sm:text-xl text-gray-400 font-light mb-8 leading-relaxed">
             Discover our meticulously crafted UI solutions designed to transform your projects into 
             exceptional digital experiences.
           </p>
@@ -427,7 +427,7 @@ const PremiumPricingSection = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { value: "12,500+", label: "Satisfied Creators" },
+                { value: "9,999+", label: "Satisfied Creators" },
                 { value: "98", label: "Customer Satisfaction" },
                 { value: "300+", label: "Premium Components" },
                 { value: "24/7", label: "Priority Support" }
@@ -435,7 +435,7 @@ const PremiumPricingSection = () => {
                 <div 
                   key={index} 
                   ref={addStatToRefs}
-                  className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700/50"
+                  className="bg-gray-800/50   backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700/50"
                 >
                   <div 
                     ref={addNumberToRefs}

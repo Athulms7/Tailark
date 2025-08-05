@@ -72,7 +72,7 @@ const Footer = () => {
     <section id="contact" className="relative bg-gradient-to-b from-[#0B071F] via-[#0F0826] to-[#07061A] py-24 px-4 overflow-hidden">
       {/* Oversized background text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 ">
-        <span className="text-[20rem] font-bold tracking-tighter text-white/5 select-none">
+        <span className="sm:text-[20rem] text-[11rem]   font-bold tracking-tighter text-white/5 select-none">
           webzee
         </span>
       </div>
