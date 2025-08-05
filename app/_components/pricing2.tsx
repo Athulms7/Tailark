@@ -278,7 +278,7 @@ const PremiumPricingSection = () => {
         </div>
 
         {/* Premium Pricing Tiers */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2  gap-8 mb-28">
           {/* Essentials Tier */}
           <div 
             ref={addCardToRefs}

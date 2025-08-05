@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 
 export function PremiumFAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -106,7 +107,7 @@ export function PremiumFAQ() {
                 visible: { opacity: 1, y: 0, x: 0 }
               }}
               transition={{
-                duration: 0.6,
+                duration: 0.7,
                 delay: index * 0.30,
                 type: "spring",
                 damping: 10
@@ -176,6 +177,9 @@ export function PremiumFAQ() {
           </p>
         </motion.div>
       </div>
+      
     </section>
   );
 }
+
+

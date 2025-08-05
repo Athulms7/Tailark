@@ -321,7 +321,7 @@ export default function FeatureSection() {
   return (
     <section id="Features"
       ref={sectionRef}
-      className="relative bg-gradient-to-b from-[#f9fafb] to-white py-24 px-4 sm:px-6 lg:px-20 text-gray-900 overflow-hidden"
+      className="relative bg-gradient-to-b from-[#d7e4f0] to-white py-24 px-4 sm:px-6 lg:px-20 text-gray-900 overflow-hidden"
     >
       <div className="text-center mb-16">
         <div className="inline-block px-4 py-1 mb-4 text-sm font-medium rounded-full bg-gray-200 text-gray-700">
