@@ -69,7 +69,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-b from-[#0B071F] via-[#0F0826] to-[#07061A] py-24 px-4 overflow-hidden">
+    <section id="contact" className="relative bg-gradient-to-b from-[#0B071F] via-[#0F0826] to-[#07061A] py-24 px-4 overflow-hidden">
       {/* Oversized background text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 ">
         <span className="text-[20rem] font-bold tracking-tighter text-white/5 select-none">
@@ -135,7 +135,7 @@ const Footer = () => {
 
       {/* Decorative gradient bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
-    </footer>
+    </section>
   );
 };
 

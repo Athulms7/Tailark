@@ -2,15 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import Appbar from "./appbar";
 
 const menuItems = [
-  { name: "Features", href: "#" },
-  { name: "Solution", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "About", href: "#" },
+  { name: "Features", href: "#Features" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "About", href: "#about" },
+  {name:"Contact",href:"#contact"}
 ];
 
 // Fixed particle positions (avoid Math.random() during render)
@@ -23,7 +22,7 @@ const particles = Array.from({ length: 15 }).map((_, i) => ({
 }));
 
 export default function Hero() {
-  const [menuOpen, setMenuOpen] = useState(false);
+
   const [isMounted, setIsMounted] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
@@ -95,42 +94,9 @@ export default function Hero() {
   return (
     <>
       {/* Header/Nav */}
-      <header className="w-full z-30 bg-transparent dark:bg-zinc-900/80 backdrop-blur-lg border-b border-gray-200/50 dark:border-zinc-800/50">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-black dark:text-white font-bold text-xl">Webzee</span>
-        </Link>
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden p-2 text-black dark:text-white"
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
-        <nav
-          className={`${
-            menuOpen 
-              ? "absolute top-16 left-0 right-0 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-lg py-4 px-6 shadow-lg" 
-              : "hidden"
-          } lg:flex lg:static lg:bg-transparent lg:shadow-none lg:py-0 lg:px-0 space-x-6 text-sm font-medium items-center`}
-        >
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="block lg:inline-block text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white py-2 lg:py-0 transition-colors"
-            >
-              {item.name}
-            </Link>
-          ))}
-          <Button 
-            size="sm" 
-            className="ml-3 bg-black dark:bg-white dark:text-black text-white shadow hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-          >
-            Start Trial
-          </Button>
-        </nav>
-      </div>
-    </header>
+      <Appbar/>
+  
+    
       {/* Hero Section */}
       <section
         ref={heroRef}
@@ -178,13 +144,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gray-50 opacity-[0.03] dark:opacity-[0.02]" />
 
         <div className="relative z-10 max-w-4xl mx-auto">
-          <h1 className="animate-in text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
-            Track, Analyze, and Grow Your Social Media with Ease
-          </h1>
-          <p className="animate-in mt-6 text-lg md:text-xl text-gray-800 dark:text-gray-300">
-            Get real-time insights on audience growth, follower trends, and
-            potential clients, all in one place.
-          </p>
+         <h1 className="animate-in text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-500 dark:from-white dark:to-gray-400">
+  Track, Analyze, and Grow Your Social Media with Ease
+</h1>
+
+<p className="animate-in mt-6 text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 dark:from-white dark:to-gray-500">
+  Get real-time insights on audience growth, follower trends, and
+  potential clients, all in one place.
+</p>
           <div className="animate-in mt-8">
             <Button size="lg">Start Your Free Trial</Button>
           </div>

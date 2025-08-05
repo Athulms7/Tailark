@@ -172,7 +172,7 @@ const PremiumPricingSection = () => {
   };
 
   return (
-    <div 
+    <section id='pricing' 
       ref={containerRef}
       className="min-h-screen bg-gradient-to-br from-gray-950 to-gray-900 text-gray-100 overflow-x-hidden"
     >
@@ -466,7 +466,7 @@ const PremiumPricingSection = () => {
           </button>
         </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 
